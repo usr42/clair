@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM golang:1.8-alpine
+FROM golang:1.8-alpine3.6
 
 VOLUME /config
 EXPOSE 6060 6061
