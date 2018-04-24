@@ -9,6 +9,8 @@ install:
 - curl https://glide.sh/get | sh
 
 script:
+- glide novendor
+- glide novendor | grep -v contrib
 - go test $(glide novendor | grep -v contrib)
 
 dist: trusty
